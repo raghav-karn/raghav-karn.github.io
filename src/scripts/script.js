@@ -48,6 +48,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 const learnDialog = document.getElementById("learn-dialog");
 const hobbiesDialog = document.getElementById("hobbies-dialog");
+const skillsDialog = document.getElementById("skills-dialog");
 
 learnDialog.addEventListener("click", function (event) {
   if (event.target !== learnDialog) {
@@ -78,6 +79,22 @@ hobbiesDialog.addEventListener("click", function (event) {
 	  closeHobbies();
 	}
   });
+
+learnDialog.addEventListener("click", function (event) {
+  if (event.target !== skillsDialog) {
+    return;
+  }
+  console.log(event.target.tagName);
+  if (
+    event.offsetX < 0 ||
+    event.offsetX > event.target.offsetWidth ||
+    event.offsetY < 0 ||
+    event.offsetY > event.target.offsetHeight
+  ) {
+    closeSkills();
+  }
+});
+
   
 function showLearn() {
 	learnDialog.style.clipPath = "unset";
@@ -89,6 +106,11 @@ function showHobbies() {
 	hobbiesDialog.showModal();
 	hobbiesDialog.style.transform = "scale(1)";
 }
+function showSkills() {
+	skillsDialog.style.clipPath = "unset";
+	skillsDialog.showModal();
+	skillsDialog.style.transform = "scale(1)";
+}
 
 function closeLearn() {
   learnDialog.style.clipPath = "unset";
@@ -99,4 +121,9 @@ function closeHobbies() {
   hobbiesDialog.style.clipPath = "unset";
   hobbiesDialog.style.transform = "scale(0)";
   hobbiesDialog.close();
+}
+function closeSKills() {
+  skillsDialog.style.clipPath = "unset";
+  skillsDialog.style.transform = "scale(0)";
+  skillsDialog.close();
 }
