@@ -143,7 +143,7 @@ function closeHobbies() {
   hobbiesDialog.style.transform = "scale(0)";
   hobbiesDialog.close();
 }
-function closeSKills() {
+function closeSkills() {
   skillsDialog.style.clipPath = "unset";
   skillsDialog.style.transform = "scale(0)";
   skillsDialog.close();
