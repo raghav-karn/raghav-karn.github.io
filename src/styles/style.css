@@ -78,6 +78,7 @@ body {
   z-index: 200;
   backdrop-filter: brightness(0.9) blur(500px);
 }
+
 .navbar .createbtn {
   cursor: pointer;
   background-color: transparent;
@@ -278,4 +279,93 @@ body {
 }
 .box .display .info2 .iconwrapper svg {
   margin-right: 5px;
+}
+
+.display {
+  position: relative;
+  left: -10%;
+  max-height: 450px;
+  max-width: 50%;
+  aspect-ratio: 3/4;
+  color: #ffffff;
+  perspective: 50rem;
+  border-radius: 10px;
+  height: 32rem;
+  width: 24rem;
+  margin-top: 3rem;;
+}
+@media (max-width: 767px) {
+  .display {
+    height: 24rem;
+    width: 18rem;
+    left: 1%;
+  }
+}
+.display .shadow {
+  position: absolute;
+  inset: 0;
+  background: var(--url);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  filter: blur(2rem) saturate(0.9);
+  box-shadow: 0 -1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.7);
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 2rem, -2rem);
+}
+.display .image {
+  position: absolute;
+  border-radius: 20px;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 40%), var(--url);
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: var(--url);
+          mask-image: var(--url);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+.display .image.background {
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 0rem);
+  border-radius: 20px;
+}
+.display .image.cutout {
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 4rem) scale(0.92);
+  z-index: 3;
+}
+.display .content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  inset: 0;
+  padding: 3.5rem;
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 6rem);
+  z-index: 4;
+}
+.display::after, .display::before {
+  content: "";
+  position: absolute;
+  inset: 1.5rem;
+  border: #9572d8 0.5rem solid;
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 2rem);
+  animation-name: rightslide;
+  animation-duration: 0.8s;
+  padding: 14px;
+  border: 1px solid;
+  background: linear-gradient(169.44deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+  border-radius: 20px;
+}
+.display::before {
+  z-index: 4;
+}
+.display.border-left-behind::before {
+  border-left: transparent;
+}
+.display.border-right-behind::before {
+  border-right: transparent;
+}
+.display.border-bottom-behind::before {
+  border-bottom: transparent;
 }
