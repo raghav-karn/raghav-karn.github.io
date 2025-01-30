@@ -1,4 +1,4 @@
-# `Portico 2` 🦈
+# `Portico 2` 🚢
 Welcome to [**my portfolio**](https://raghav-karn.github.io/)!
 
 **Note**: For the best experience, kindly view on desktop. Although it is mostly resposive, it is intended to be viewed on desktop.
@@ -11,10 +11,15 @@ Welcome to [**my portfolio**](https://raghav-karn.github.io/)!
 **Portico 2** is a follow-up to previous portfolio site ‒ [**Portico**](https://raghav-karn.github.io/portico). This site brings forward the beauty of blurs and gradients, a portfolio site enveloped in glassmorphic-design. It is a simple page with HTML, CSS (including Bootstrap icons) and vanilla JS.
 
 ## Images 📸
+**Preview of home page**:
 ![Preview](src/images/preview1.png)
 ![Preview](src/images/preview2.png)
 ![Preview](src/images/preview3.png)
 ![Preview](src/images/preview4.png)
+![Preview](src/images/preview5.png)
+
+**Preview of Blogs page**:
+![Preview](src/images/preview6.png)
 
 ## How I managed to pull this off 📃
 > A portfolio site to host my homepage (and my future domain), featuring elegant design and pretty much everything about me was something that I always needed. My previous portfolio site was cool but it didn't have enough room for everything, so I switched over to a regular portfolio style. 
