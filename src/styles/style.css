@@ -4,6 +4,7 @@ body {
   margin: 0;
   background: radial-gradient(circle at 100%, #4603b1, #6b58b3 50%, #e24687 75%, #0f040e 75%);
 }
+
 .hidden {
   display: none;
 }
@@ -67,4 +68,65 @@ body {
   justify-content: space-between;
   padding-bottom: 30px;
   border-top: 1px solid #F2F2F2;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 0%;
+  z-index: 200;
+  backdrop-filter: brightness(0.9) blur(500px);
+}
+.navbar .createbtn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 126px;
+  height: 45px;
+  color: #BCBCBC;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+.navbar .createbtn.selectedbtn {
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: 0.2s;
+}
+.createbtn.selectedbtn:hover {
+  transition: 0.2s;
+  background: radial-gradient(circle at 100%, #ffaf53, #ff7056 50%, #ffcc6e 5%, #0f040e 75%);
+}
+.navbar .navlogo {
+  height: 100%;
+  padding-left: 1em;
+  background: linear-gradient(93.51deg, #a84dd3 2.84%, #51e0d4 99.18%);
+  animation: gradient 5s ease  infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Bimbo";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
+}
+.navbar .navlink {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.25em;
+  color: #BCBCBC;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar .navlink:hover {
+  background: linear-gradient(93.51deg, #51e0a9 2.84%, #3081ED 99.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1.5px solid #5177e0;
+}
+.navbar .navlink:not(:last-child) {
+  margin-right: 32px;
 }
