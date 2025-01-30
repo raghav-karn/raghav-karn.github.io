@@ -604,3 +604,49 @@ body {
 .filterbtn svg {
   margin-right: 5px;
 }
+
+
+dialog {
+  transition: 300ms ease-in-out, clip-path 0.5s linear;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: scale(0);
+  min-width: min(50vw, 80ch);
+  border-radius: 30px;
+  padding: 0;
+  font-family: "poppins";
+}
+dialog::backdrop {
+  opacity: 0.7;
+  backdrop-filter: brightness(0) blur(90px);
+  background-size: 100%, 50px 50px;
+}
+dialog header {
+  border-bottom: 3px solid;
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  position: relative;
+  background-color: #090313;
+  color: #ff97dc;
+  font-family: 'Doto';
+}
+dialog .close .btn {
+  border-radius: 50%;
+  top: 5px;
+  right: 10px;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  overflow: hidden;
+  background-color: #b486cf;
+  color: #9b0733;
+  padding: 0;
+}
+#confirm-dialog {
+  background-color: #e7e3eb;
+}
+.form-container {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background-color: #d5a1ff;
+}
