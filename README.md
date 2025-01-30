@@ -29,7 +29,7 @@ Here is how I managed to do this:
 > Playing around, making small changes to refine and add the beautiful blur for a glassmorphic-design, using NOTHING-like Doto font, adding a fun 3D card and popups was a fun venture!
 
 ## The rough part — Animating the 3D model¡ 🎊
-> Searching for SVGs outside of Bootstrap Studio, wandering into Google Fonts Icons but the icons as fonts could not be formatted in the way as preferred, so had to download 2 icons from there.
+> Searching for SVGs outside of Bootstrap Studio, wandering into Google Fonts Icons but the icons as fonts could not be formatted in the way as preferred, so had to download 2 icons from there. Also, I couldn't figure out a hamburger menu for mobile version for now, so now hamburgers. ;-;
 
 ## Credits 🤝
 **From online sources**: Bootstrap Icons, Google Fonts Icons, Google Fonts (Poppins, Doto), CDNFonts.com (Bimbo font)
