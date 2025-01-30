@@ -49,6 +49,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 const learnDialog = document.getElementById("learn-dialog");
 const hobbiesDialog = document.getElementById("hobbies-dialog");
 const skillsDialog = document.getElementById("skills-dialog");
+const blogsDialog = document.getElementById("blogs-dialog");
 
 learnDialog.addEventListener("click", function (event) {
   if (event.target !== learnDialog) {
@@ -95,6 +96,21 @@ learnDialog.addEventListener("click", function (event) {
   }
 });
 
+learnDialog.addEventListener("click", function (event) {
+  if (event.target !== blogsDialog) {
+    return;
+  }
+  console.log(event.target.tagName);
+  if (
+    event.offsetX < 0 ||
+    event.offsetX > event.target.offsetWidth ||
+    event.offsetY < 0 ||
+    event.offsetY > event.target.offsetHeight
+  ) {
+    closeBlogs();
+  }
+});
+
   
 function showLearn() {
 	learnDialog.style.clipPath = "unset";
@@ -111,6 +127,11 @@ function showSkills() {
 	skillsDialog.showModal();
 	skillsDialog.style.transform = "scale(1)";
 }
+function showBlogs() {
+	blogsDialog.style.clipPath = "unset";
+	blogsDialog.showModal();
+	blogsDialog.style.transform = "scale(1)";
+}
 
 function closeLearn() {
   learnDialog.style.clipPath = "unset";
@@ -126,4 +147,9 @@ function closeSKills() {
   skillsDialog.style.clipPath = "unset";
   skillsDialog.style.transform = "scale(0)";
   skillsDialog.close();
+}
+function closeBlogs() {
+  blogsDialog.style.clipPath = "unset";
+  blogsDialog.style.transform = "scale(0)";
+  blogsDialog.close();
 }
