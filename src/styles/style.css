@@ -1,0 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/bimbo');
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 100%, #4603b1, #6b58b3 50%, #e24687 75%, #0f040e 75%);
+}
