@@ -1,5 +1,5 @@
 # `Portico 2` 🚢
-Welcome to [**my portfolio**](https://raghav-karn.github.io/)!
+Hey, I am **Raghav Karn** and welcome to [**my portfolio**](https://raghav-karn.github.io/)!
 
 **Note**: For the best experience, kindly view on desktop. Although it is mostly resposive, it is intended to be viewed on desktop.
 
@@ -30,14 +30,15 @@ Here is how I managed to do this:
 - Added a 3D card in hero section from my previous project (Dimensions of Blåhaj).
 - Added cool blur, gradients, as well as the 3D card and window dialog box popups for a stack of uniqueness. 
 
-## The fun part — Learning! 😋
+## The fun part — Beautifying! 😋
 > Playing around, making small changes to refine and add the beautiful blur for a glassmorphic-design, using NOTHING-like Doto font, adding a fun 3D card and popups was a fun venture!
 
-## The rough part — Animating the 3D model¡ 🎊
+## The rough part — Icons and Hamburger¡ 🎊
 > Searching for SVGs outside of Bootstrap Studio, wandering into Google Fonts Icons but the icons as fonts could not be formatted in the way as preferred, so had to download 2 icons from there. Also, I couldn't figure out a hamburger menu for mobile version for now, so now hamburgers. ;-;
 
 ## Credits 🤝
 **From online sources**: Bootstrap Icons, Google Fonts Icons, Google Fonts (Poppins, Doto), CDNFonts.com (Bimbo font)
 
-**From previous projects**: Dimensions of Blåhaj, HOdrogen PerHOxide, Portico
+**From previous projects**: Dimensions of Blåhaj (inspo for background gradient and blur), HOdrogen PerHOxide (inspo for popup dialogs), Portico (for inspiration/inspo)
+
 ---
