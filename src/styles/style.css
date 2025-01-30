@@ -50,7 +50,7 @@ body {
   justify-content: space-between;
   margin-top: 80px;
 }
-.landingpage .auction {
+.landingpage .hobbies {
   margin-top: 100px;
 }
 .landingpage .discover {
@@ -227,13 +227,6 @@ body {
   max-width: 50%;
   overflow: hidden;
 } */
-.box .display-nft {
-  object-fit: cover;
-  flex-shrink: 0;
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
-}
 .box .display .infowrapper {
   display: flex;
   align-items: center;
@@ -272,13 +265,6 @@ body {
 }
 .box .display .info2 p {
   margin: 0;
-}
-.box .display .info2 .iconwrapper {
-  display: flex;
-  align-items: center;
-}
-.box .display .info2 .iconwrapper svg {
-  margin-right: 5px;
 }
 
 .display {
@@ -368,4 +354,42 @@ body {
 }
 .display.border-bottom-behind::before {
   border-bottom: transparent;
+}
+
+.hobbies .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.hobbies .title .titlebold {
+  margin: 0;
+  font-family: "Doto";
+  border-bottom: 3px dotted #fff;
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+.hobbies .title .titleslim {
+  margin: 0;
+  font-family: monospace;
+  font-style: normal;
+  color: #D7D7D7;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: -1px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px dotted #D7D7D7;
+}
+.hobbies .hob {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  justify-content: space-between;
 }
